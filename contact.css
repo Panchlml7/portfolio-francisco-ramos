@@ -1,0 +1,31 @@
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: .65rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font: 500 .78rem "Space Mono", monospace;
+  font-style: normal;
+}
+
+.contact-details a { text-decoration: none; }
+.contact-details a:hover,
+.contact-details a:focus { color: var(--lime); }
+
+@media (max-width: 480px) {
+  .contact-actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-details { flex-direction: column; }
+  .contact-details span { display: none; }
+}
